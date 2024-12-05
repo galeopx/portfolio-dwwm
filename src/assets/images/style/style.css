@@ -1,9 +1,0 @@
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400; /* Elle est implémentée avec une graisse de 400 pour le corps du texte*/
-  }
-  
-  h1, h2, h3, strong {
-    font-weight: 600; /* de 600 pour les titres et les balises <strong> */
-  }
-  
