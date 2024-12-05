@@ -5,11 +5,17 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
-import './assets/styles.css';
+import Header from "./components/Header";
+import './assets/style/style.css';
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
+    <div className="App">
+      <Header />
+      <Footer />
+    </div>
   );
 }
 
