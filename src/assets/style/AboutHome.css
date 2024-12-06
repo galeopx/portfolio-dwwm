@@ -1,0 +1,24 @@
+.title{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    text-align: left; 
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; /* Distance sous le texte */
+    left: 0;
+    width: 100%; /* Ajustez la largeur de la ligne */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: blue; /* Couleur bleue */
+}
+  .title + *{
+    margin-top: 20px;
+}
+label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
