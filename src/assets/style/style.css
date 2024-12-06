@@ -40,3 +40,10 @@ body {
   footer i:hover{
     filter: brightness(0) invert(1);
   }
+/* HeroHome Style */
+#h1__home, #h2__home{
+    font-weight: bold;
+}
+/* AboutHome Style */
+
+
