@@ -1,0 +1,31 @@
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out; /* on devait s'amuser avec les transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.service-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.service-icon {
+    font-size: 2rem;
+    color: #007bff; /* Bleu Bootstrap */
+  }
+
+.text-center h2 {
+    font-weight: bold;
+  }
+  
+.text-center p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+.blue-line {
+    height: 4px; 
+    background-color: #007bff;
+    width: 35%; 
+    margin: 10px auto 0; 
+  }
