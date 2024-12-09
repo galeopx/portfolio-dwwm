@@ -22,9 +22,9 @@ const Services = () => {
     ];
     return(
         <section>
-            <img src={imgHead} alt="banner" className="img-fluid"></img>
+            <img src={imgHead} alt="banner" className="img-fluid w-100"></img>
             <div className="services-section container my-5">
-                <h2 className="text-center">Mon offre de services</h2>
+                <h1 className="text-center fw-bold">Mon offre de services</h1>
                 <p className="text-center">
                     Voici les prestation sur lesquelles je peux intervenir
                 </p>
@@ -35,7 +35,7 @@ const Services = () => {
                         <div className="col-md-4 mb-3" key={index} >
                             <div className="card service-card text-center p-3">
                                 <div className="service-icon"><i className={service.icon}></i></div> {/* On charge les icones bootstrap dynamiquement */}
-                                <h3 className="h5 card-title mt-3">{service.title}</h3>
+                                <h3 className="fw-bold card-title mt-3">{service.title}</h3>
                                 <p className="card-text">{service.description}</p>
                             </div>
                         </div>
