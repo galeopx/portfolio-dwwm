@@ -1,26 +1,36 @@
 import React from "react";
-import {Navbar, Nav, Container} from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import Home from "../pages/Home";
 
-export default function Header(){
+const Header = () => {
     return(
         <header>
-            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-                <Container>
-                    <Navbar.Brand href="#">JOHN DOE</Navbar.Brand>
+            <nav className="navbar navbar-expand-lg navbar-dark position-sticky bg-dark">
+                <div className="container-fluid">
+                    <a className="navbar-brand text-light text-uppercase" href={<Home/>}>John Doe</a>
                     {/* On ajoute le menu hamburger de bootstrap pour le mobile, il ne s'affiche pas dans les autres versions */}
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="offcanvas offcanvas-end text-bg-dark" tabIndex='-1' id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div className="offcanvas-header">
+                            <h2 className="offcanvas-title text-uppercase h5" id="offcanvasDarkNavbarLabel">John Doe</h2>
+                            <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
                     {/* On gère le menu de navigation et son contenu (hamburger pour le mobile) */}
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto" > {/* attribut ms-auto permet de mettre l'élement à droite de la barre*/}
-                            <Nav.Link href="" className="nav-link" >HOME</Nav.Link>
-                            <Nav.Link href="" className="nav-link">SERVICE</Nav.Link>
-                            <Nav.Link href="" className="nav-link">PORTFOLIO</Nav.Link>
-                            <Nav.Link href="" className="nav-link">CONTACT</Nav.Link>
-                            <Nav.Link href="" className="nav-link">MENTION LEGALES</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+                        <div className="offcanvas-body"> {/* attribut ms-auto permet de mettre l'élement à droite de la barre*/}
+                            <ul className="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">    
+                                <li className="nav-item"><Link to="/" className="nav-link text-uppercase" >Home</Link></li>
+                                <li className="nav-item"><Link to="/Services" className="nav-link text-uppercase" >Services</Link></li>
+                                <li className="nav-item"><Link to="/Portfolio" className="nav-link text-uppercase" >Portfolio</Link></li>
+                                <li className="nav-item"><Link to="/Contact" className="nav-link text-uppercase" >Contact</Link></li>
+                                <li className="nav-item"><Link to="/MentionsLegales" className="nav-link text-uppercase" >Mentions légales</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-    )
-}
+    );
+};
+export default Header;

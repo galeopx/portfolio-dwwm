@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
@@ -13,17 +12,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <div className="App">
       <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/mentions-legales" element={<MentionsLegales />} />
+      <Routes> 
+          <Route path="/" element={<Home />}>Home</Route>
+          <Route path="/Services" element={<Services />}>Services</Route>
+          <Route path="/Portfolio" element={<Portfolio />} >Portfolio</Route>
+          <Route path="/Contact" element={<Contact />} >Contact</Route>
+          <Route path="/MentionsLegales" element={<MentionsLegales />} >Mentions Légales</Route>
       </Routes>
       <Footer/>
-    </Router>
+    </div>
   );
 }
 

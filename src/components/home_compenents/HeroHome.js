@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "../../assets/style/images/hero-bg.jpg";
+import GithubJohnDoe from "./ModaleHome";
 
 
 
@@ -15,7 +16,7 @@ const HeroHome = () => {
             <div className="text-center">
                 <h1 className="display-4" id="h1__home">Bonjour, je suis John Doe</h1>
                 <h2 className="mb-4" id="h2__home">Développeur web full stack</h2>
-                <button className="btn btn-danger btn-lg" data-bs-toggle="modal" datat-bs-target="#learnMoreModal">En savoir plus</button>
+                <GithubJohnDoe/>
             </div>
         </section>
     );
