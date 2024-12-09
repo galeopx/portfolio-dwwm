@@ -1,0 +1,18 @@
+.projet-card {
+    transition: all 0.3s ease-in-out;
+  }
+.projet-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+.btn-primary:hover {
+    background-color: #3578e5; /* Couleur plus claire */
+    border-color: #3578e5;
+  }
+.blue-line {
+    height: 4px; 
+    background-color: #007bff;
+    width: 35%; 
+    margin: 10px auto 0; 
+  }
+  /* Par défaut, on définit la taille de la police */

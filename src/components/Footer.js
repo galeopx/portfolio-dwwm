@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'bootstrap-icons/font/bootstrap-icons.css'; /*On utilise comme demandé les icones de la biliothèque Bootstrap */
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -31,23 +32,23 @@ const Footer = () => {
                     <Col md={4} className="mb-3">
                         <h3>Liens utiles</h3>
                         <ul className="list-unstyled">
-                            <li><a href="/" className="text-light">Accueil</a></li>
-                            <li><a href="/" className="text-light">Services</a></li>
-                            <li><a href="/" className="text-light">Portfolio</a></li>
-                            <li><a href="/" className="text-light">Me contacter</a></li>
-                            <li><a href="/" className="text-light">Mentions légales</a></li>
+                            <li><Link to="/" className="text-light">Accueil</Link></li>
+                            <li><Link to="/Services" className="text-light">Services</Link></li>
+                            <li><Link to="/Portfolio" className="text-light">Portfolio</Link></li>
+                            <li><Link to="/Contact" className="text-light">Me contacter</Link></li>
+                            <li><Link to="/MentionsLegales" className="text-light">Mentions légales</Link></li>
                         </ul>
                     </Col>
                     {/* 3ème Colonne les derniers projets réalisés */}
                     <Col md={4} className="mb-3">
                         <h3>Mes dernières réalisations</h3>
                         <ul className="list-unstyled">
-                            <li><a href="./pages/Portfolio.js">Fresh Food</a></li>
-                            <li><a href="./pages/Portfolio.js">Restaurant Akira</a></li>
-                            <li><a href="./pages/Portfolio.js">Espace bien-être</a></li>
-                            <li><a href="./pages/Portfolio.js">SEO</a></li>
-                            <li><a href="./pages/Portfolio.js">Création d'une API</a></li>
-                            <li><a href="./pages/Portfolio.js">Maquette d'un site</a></li>
+                            <li><Link to="/Portfolio">Fresh Food</Link></li>
+                            <li><Link to="/Portfolio">Restaurant Akira</Link></li>
+                            <li><Link to="/Portfolio">Espace bien-être</Link></li>
+                            <li><Link to="/Portfolio">SEO</Link></li>
+                            <li><Link to="/Portfolio">Création d'une API</Link></li>
+                            <li><Link to="/Portfolio">Maquette d'un site</Link></li>
                         </ul>
                     </Col>
                 </Row>
