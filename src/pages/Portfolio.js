@@ -57,7 +57,7 @@ const Portfolio = () => {
     ]
     return(
         <section>
-            <img src={imgHead} alt="banner" className="img-fluid"></img>
+            <img src={imgHead} alt="banner" className="img-fluid w-100"></img>
             <div className="portfolio-content py-5">
                 <div className="container">
                     <h1 className="text-center mb-2 h1 fw-bold ">Portfolio</h1>
