@@ -18,8 +18,9 @@ body {
     text-decoration: underline;
 } */
 .navbar-nav .nav-link.active {
-    color: rgb(179, 179, 179);
-    
+  color: rgb(179, 179, 179);
+  text-decoration: underline;
+  font-weight: bold;
 }
   /* Footer style */
   footer a {
