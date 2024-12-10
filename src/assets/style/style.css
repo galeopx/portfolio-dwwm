@@ -18,8 +18,14 @@ body {
     text-decoration: underline;
 } */
 .navbar-nav .nav-link.active {
+<<<<<<< Updated upstream
     color: rgb(179, 179, 179);
     
+=======
+  color: rgb(179, 179, 179);
+  text-decoration: underline;
+  font-weight: bold;
+>>>>>>> Stashed changes
 }
   /* Footer style */
   footer a {
