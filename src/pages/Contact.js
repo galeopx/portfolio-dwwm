@@ -11,7 +11,7 @@ const Contact = () => {
                     <div className="blue-line"></div>
                 </div>
             </div>
-            <div className="row mt-5 mb-5 px-2 rounded shadow">
+            <section className="row mt-5 mb-5 px-2 rounded shadow">
                 <div className="col-lg-6 col-12 mb-4">
                     <h2 className="fw-bold mt-4">Formulaire de contact</h2>
                     <div className="blue-line_2"></div>
@@ -56,7 +56,7 @@ const Contact = () => {
                         ></iframe>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

@@ -20,9 +20,8 @@ const GithubJohnDoe = () => {
         return(
         <div>
             <button className="btn btn-danger" onClick={() => setShowModal(true)}>En savoir plus</button>
-            {/* On doit créer une condition pour afficher le contenue seulement si le button a été cliqué.*/}
-            <div className="modal show d-bloc" tabIndex="-1" style={{ display: showModal ? 'block' : 'none' }}>
-                <div className="modal-dialog modal-dialog-centered">
+            <div className="modal show d-bloc" tabIndex="-1" style={{ display: showModal ? 'block' : 'none'}}> {/* style={{...}} permet d'afficher la modale au click */}
+                <div className="modal-dialog modal-dialog-centered modal-lg">
                     <div className="modal-content bg-dark text-light">
                             <div className="modal-header">
                                 <h3 className="modal-title">Mon profil GitHub</h3>
@@ -32,11 +31,11 @@ const GithubJohnDoe = () => {
                                 <div className="container">
                                     <div className="row">
                                         {/* on récupère notre première donnée de l'API l'avatar */}
-                                        <div className="col-md-4 col-12 text-center mb-3 mb-md-0">
+                                        <div className="col-md-4 col-12 text-center ">
                                             <img 
                                             src={profile.avatar_url} 
                                             alt="Avatar Github" 
-                                            className="img-fluid mb-3"></img>
+                                            className="img-fluid profile-img mb-3"></img>
                                         </div>
                                         <div className="col-md-8 col-12 text-start">
                                             <ul className="list-unstyled mb-2">
