@@ -1,0 +1,13 @@
+.blue-line {
+    height: 4px; 
+    background-color: #007bff;
+    width: 35%; 
+    margin: 10px auto 0; 
+  }
+.blue-line_2{
+    height: 4px;
+    background-color: #007bff;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
