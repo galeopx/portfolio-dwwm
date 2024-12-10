@@ -2,3 +2,10 @@
     border-radius: 10px;
     overflow: hidden;
 }
+.modal-lg{
+    max-width: 40%;
+}
+.profile-img{
+    max-width: 100%;
+    height: auto;
+}

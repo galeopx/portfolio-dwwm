@@ -1,9 +1,13 @@
 import React from "react";
 import "../assets/style/MentionsLegales.css"
+import { Helmet } from "react-helmet"; //Permet de manipuler le contenu <Head> du HTML et ainsi de ne pas indexer cette page
 
 const MentionsLegales = () => {
     return(
     <div className="container mt-5 mb-5">
+        <Helmet>
+            <meta name="robots" content="noindex, nofollow"/>
+        </Helmet>
         <h1 className="text-center fw-bold mb-3">Mentions légales</h1>
         <div className="blue-line mb-5"></div>
         <div className="accordion" id="mentionslegales">
